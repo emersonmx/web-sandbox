@@ -2,22 +2,30 @@ const path = require('path');
 const merge = require('webpack-merge');
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const WebpackNotifierPlugin = require('webpack-notifier');
 
 const nodeEnv = process.env.NODE_ENV;
 const isProduction = nodeEnv == 'production';
 
 commonConfig = {
-    entry: ['./src/main.js'],
+    entry: './src/main.js',
     output: {
         filename: 'main.js',
-        path: path.resolve(__dirname, '../dist'),
+        path: path.resolve(__dirname, 'dist'),
     },
-    plugins: [new MiniCssExtractPlugin()],
+    plugins: [
+        new MiniCssExtractPlugin({ filename: 'main.css' }),
+        new WebpackNotifierPlugin({ alwaysNotify: true }),
+    ],
     module: {
         rules: [
             {
                 test: /\.css$/i,
-                use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader'],
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    'postcss-loader',
+                ],
             },
         ],
     },
