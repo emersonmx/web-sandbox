@@ -24,7 +24,7 @@
         "tailwindcss": "^1.1.4"
     },
     "scripts": {
-        "dev": "webpack-dev-server --no-progress --hide-modules --config=./webpack/dev.js",
-        "prod": "webpack --no-progress --hide-modules --config=./webpack/prod.js"
+        "dev": "webpack-dev-server --no-progress --hide-modules --config=./webpack/dev.config.js",
+        "prod": "webpack --no-progress --hide-modules --config=./webpack/prod.config.js"
     }
 }

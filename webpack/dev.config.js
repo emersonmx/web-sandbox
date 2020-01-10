@@ -1,4 +1,4 @@
-const commonConfig = require("./common.js");
+const commonConfig = require("./common.config.js");
 const merge = require("webpack-merge");
 
 module.exports = merge(commonConfig, {
@@ -7,6 +7,5 @@ module.exports = merge(commonConfig, {
     watch: true,
     devServer: {
         contentBase: "./dist",
-        port: 9000
     }
 });

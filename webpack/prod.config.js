@@ -1,4 +1,4 @@
-const commonConfig = require("./common.js");
+const commonConfig = require("./common.config.js");
 const merge = require("webpack-merge");
 
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
