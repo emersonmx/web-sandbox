@@ -1,0 +1,29 @@
+{
+    "name": "hello-webpack",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "devDependencies": {
+        "autoprefixer": "^9.7.3",
+        "css-loader": "^3.4.1",
+        "mini-css-extract-plugin": "^0.9.0",
+        "optimize-css-assets-webpack-plugin": "^5.0.3",
+        "postcss-import": "^12.0.1",
+        "postcss-loader": "^3.0.0",
+        "postcss-nested": "^4.2.1",
+        "postcss-simple-vars": "^5.0.2",
+        "webpack": "^4.41.5",
+        "webpack-cli": "^3.3.10",
+        "webpack-dev-server": "^3.10.1",
+        "webpack-merge": "^4.2.2"
+    },
+    "dependencies": {
+        "axios": "^0.19.1",
+        "lodash": "^4.17.15",
+        "tailwindcss": "^1.1.4"
+    },
+    "scripts": {
+        "dev": "webpack-dev-server --no-progress --hide-modules --config=./webpack/dev.js",
+        "prod": "webpack --no-progress --hide-modules --config=./webpack/prod.js"
+    }
+}
