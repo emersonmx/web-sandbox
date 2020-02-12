@@ -19334,8 +19334,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/emersonmx/code/projects/web/hello-webpack/src/app/main.js */"./src/app/main.js");
-module.exports = __webpack_require__(/*! /home/emersonmx/code/projects/web/hello-webpack/src/app/main.css */"./src/app/main.css");
+__webpack_require__(/*! /home/emersonmx/code/projects/web/web-sandbox/code/hello-webpack/src/app/main.js */"./src/app/main.js");
+module.exports = __webpack_require__(/*! /home/emersonmx/code/projects/web/web-sandbox/code/hello-webpack/src/app/main.css */"./src/app/main.css");
 
 
 /***/ })
