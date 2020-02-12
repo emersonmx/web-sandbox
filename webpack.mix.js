@@ -12,9 +12,9 @@ mix.postCss('src/app/main.css', 'dist/app', [
     require('postcss-simple-vars'),
     require('tailwindcss'),
     require('autoprefixer'),
-    purgecss({
-        content: ['./dist/**/*.html'],
-    }),
+    ...(mix.inProduction()
+        ? [purgecss({ content: ['./dist/**/*.html'] })]
+        : []),
 ]);
 
 if (mix.inProduction()) {
