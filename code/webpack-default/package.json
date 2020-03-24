@@ -9,7 +9,6 @@
         "@fullhuman/postcss-purgecss": "^2.1.0",
         "autoprefixer": "^9.7.5",
         "clean-webpack-plugin": "^3.0.0",
-        "copy-webpack-plugin": "^5.1.1",
         "cross-env": "^7.0.2",
         "css-loader": "^3.4.2",
         "file-loader": "^6.0.0",
@@ -24,13 +23,12 @@
         "webpack-cli": "^3.3.11",
         "webpack-dev-server": "^3.10.3",
         "webpack-manifest-plugin": "^2.2.0",
-        "webpack-merge": "^4.2.2",
-        "webpack-notifier": "^1.8.0"
+        "webpack-merge": "^4.2.2"
     },
     "scripts": {
-        "dev": "cross-env NODE_ENV=development webpack --no-progress --hide-modules --config=webpack/dev.js",
+        "dev": "cross-env NODE_ENV=development webpack --no-progress --hide-modules --config=webpack.config.js",
         "watch": "npm run dev -- --watch",
-        "prod": "cross-env NODE_ENV=production webpack --no-progress --hide-modules --config=webpack/prod.js"
+        "prod": "cross-env NODE_ENV=production webpack --no-progress --hide-modules --config=webpack.config.js"
     },
     "browserslist": [
         "> 0.5%",
